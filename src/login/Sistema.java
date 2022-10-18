@@ -32,6 +32,7 @@ public class Sistema extends javax.swing.JFrame {
         jTabbedPane1 = new javax.swing.JTabbedPane();
         PanelCarros = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
+        jButton1 = new javax.swing.JButton();
         PanelEmpleados = new javax.swing.JPanel();
         jLabel3 = new javax.swing.JLabel();
         PanelClientes = new javax.swing.JPanel();
@@ -75,6 +76,14 @@ public class Sistema extends javax.swing.JFrame {
         jLabel2.setForeground(new java.awt.Color(102, 102, 102));
         jLabel2.setText("COCHES");
         PanelCarros.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 310, -1, -1));
+
+        jButton1.setText("jButton1");
+        jButton1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton1MouseClicked(evt);
+            }
+        });
+        PanelCarros.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 250, -1, -1));
 
         jTabbedPane1.addTab("tab1", PanelCarros);
 
@@ -412,6 +421,10 @@ public class Sistema extends javax.swing.JFrame {
         this.dispose();
     }//GEN-LAST:event_btncerrarsesionMouseClicked
 
+    private void jButton1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MouseClicked
+        System.out.println("hola");
+    }//GEN-LAST:event_jButton1MouseClicked
+
     
     
     
@@ -475,6 +488,7 @@ public class Sistema extends javax.swing.JFrame {
     private javax.swing.JPanel btnproducto;
     private javax.swing.JPanel btntrabajador;
     private javax.swing.JLabel iconproducto;
+    private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
