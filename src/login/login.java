@@ -12,7 +12,7 @@ public class login extends javax.swing.JFrame {
     
     public login() {
         initComponents();
-        
+        //angela
         this.setLocationRelativeTo(null);
         this.setTitle("Iniciar Sesión");
     }
@@ -56,7 +56,6 @@ public class login extends javax.swing.JFrame {
 
         txtUsuario.setBackground(new java.awt.Color(237, 11, 31));
         txtUsuario.setFont(new java.awt.Font("Roboto Light", 0, 18)); // NOI18N
-        txtUsuario.setForeground(new java.awt.Color(0, 0, 0));
         txtUsuario.setText("Ingrese su nombre de usuario");
         txtUsuario.setBorder(null);
         txtUsuario.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -77,7 +76,6 @@ public class login extends javax.swing.JFrame {
 
         txtContraseña.setBackground(new java.awt.Color(237, 11, 31));
         txtContraseña.setFont(new java.awt.Font("Roboto Light", 0, 18)); // NOI18N
-        txtContraseña.setForeground(new java.awt.Color(0, 0, 0));
         txtContraseña.setText("*********");
         txtContraseña.setToolTipText("");
         txtContraseña.setBorder(null);
@@ -107,7 +105,6 @@ public class login extends javax.swing.JFrame {
         });
 
         lblLogin.setFont(new java.awt.Font("Roboto", 2, 14)); // NOI18N
-        lblLogin.setForeground(new java.awt.Color(0, 0, 0));
         lblLogin.setText("ENTRAR");
 
         javax.swing.GroupLayout btnEntrarLayout = new javax.swing.GroupLayout(btnEntrar);
@@ -130,7 +127,6 @@ public class login extends javax.swing.JFrame {
         Background.add(btnEntrar, new org.netbeans.lib.awtextra.AbsoluteConstraints(930, 510, 180, 50));
 
         lblBackGround.setBackground(new java.awt.Color(0, 0, 0));
-        lblBackGround.setForeground(new java.awt.Color(0, 0, 0));
         lblBackGround.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/imagenes/Fondo3_1.jpg"))); // NOI18N
         lblBackGround.setText("jLabel2");
         lblBackGround.setPreferredSize(new java.awt.Dimension(1280, 720));
