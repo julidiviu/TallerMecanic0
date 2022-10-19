@@ -47,6 +47,7 @@ public class Sistema extends javax.swing.JFrame {
         lblcoche6 = new javax.swing.JLabel();
         txtcedcliente = new javax.swing.JTextField();
         lblcoche5 = new javax.swing.JLabel();
+        jPasswordField1 = new javax.swing.JPasswordField();
         jScrollPane1 = new javax.swing.JScrollPane();
         txtobsvehiculo = new javax.swing.JTextArea();
         jButton1 = new javax.swing.JButton();
@@ -186,6 +187,9 @@ public class Sistema extends javax.swing.JFrame {
         lblcoche5.setFont(new java.awt.Font("Roboto", 0, 18)); // NOI18N
         lblcoche5.setText("Observaciónes:");
         PanelCarros.add(lblcoche5, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 480, -1, -1));
+
+        jPasswordField1.setText("jPasswordField1");
+        PanelCarros.add(jPasswordField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 60, -1, -1));
 
         txtobsvehiculo.setColumns(20);
         txtobsvehiculo.setForeground(new java.awt.Color(51, 51, 51));
@@ -827,6 +831,7 @@ public class Sistema extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JPasswordField jPasswordField1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JLabel lbapeempleado;
     private javax.swing.JLabel lbcedempleado;
