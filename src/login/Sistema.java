@@ -5,6 +5,8 @@
 
 package login;
 
+import sql.crudsql;
+
 /**
  *
  * @author julia
@@ -29,10 +31,26 @@ public class Sistema extends javax.swing.JFrame {
     private void initComponents() {
 
         Background = new javax.swing.JPanel();
-        jTabbedPane1 = new javax.swing.JTabbedPane();
+        TabbedPaneMain = new javax.swing.JTabbedPane();
         PanelCarros = new javax.swing.JPanel();
-        jLabel2 = new javax.swing.JLabel();
+        lblregistrarcoches = new javax.swing.JLabel();
+        lblcoche = new javax.swing.JLabel();
+        txtplavehiculo = new javax.swing.JTextField();
+        lblcoche1 = new javax.swing.JLabel();
+        txttipvehiculo = new javax.swing.JTextField();
+        lblcoche2 = new javax.swing.JLabel();
+        txtmodvehiculo = new javax.swing.JTextField();
+        lblcoche3 = new javax.swing.JLabel();
+        txtcolvehiculo = new javax.swing.JTextField();
+        lblcoche4 = new javax.swing.JLabel();
+        txtmarvehiculo = new javax.swing.JTextField();
+        lblcoche6 = new javax.swing.JLabel();
+        txtcedcliente = new javax.swing.JTextField();
+        lblcoche5 = new javax.swing.JLabel();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        txtobsvehiculo = new javax.swing.JTextArea();
         jButton1 = new javax.swing.JButton();
+        fondopiratacoche = new javax.swing.JLabel();
         PanelClientes = new javax.swing.JPanel();
         jLabel4 = new javax.swing.JLabel();
         PanelPlanilla = new javax.swing.JPanel();
@@ -96,20 +114,103 @@ public class Sistema extends javax.swing.JFrame {
         PanelCarros.setForeground(new java.awt.Color(255, 0, 0));
         PanelCarros.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel2.setFont(new java.awt.Font("Roboto Black", 0, 48)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(102, 102, 102));
-        jLabel2.setText("COCHES");
-        PanelCarros.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 310, -1, -1));
+        lblregistrarcoches.setFont(new java.awt.Font("Roboto Black", 0, 36)); // NOI18N
+        lblregistrarcoches.setForeground(new java.awt.Color(102, 102, 102));
+        lblregistrarcoches.setText("REGISTRAR VEHICULOS");
+        PanelCarros.add(lblregistrarcoches, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 10, -1, -1));
 
-        jButton1.setText("jButton1");
+        lblcoche.setFont(new java.awt.Font("Roboto", 0, 18)); // NOI18N
+        lblcoche.setText("Placa del Vehículo:");
+        PanelCarros.add(lblcoche, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 110, -1, -1));
+
+        txtplavehiculo.setFont(new java.awt.Font("Roboto", 0, 18)); // NOI18N
+        txtplavehiculo.setForeground(new java.awt.Color(51, 51, 51));
+        txtplavehiculo.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        txtplavehiculo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtplavehiculoActionPerformed(evt);
+            }
+        });
+        PanelCarros.add(txtplavehiculo, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 110, 200, -1));
+
+        lblcoche1.setFont(new java.awt.Font("Roboto", 0, 18)); // NOI18N
+        lblcoche1.setText("Tipo de Vehículo:");
+        PanelCarros.add(lblcoche1, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 170, -1, -1));
+
+        txttipvehiculo.setFont(new java.awt.Font("Roboto", 0, 18)); // NOI18N
+        txttipvehiculo.setForeground(new java.awt.Color(51, 51, 51));
+        txttipvehiculo.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        PanelCarros.add(txttipvehiculo, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 170, 200, -1));
+
+        lblcoche2.setFont(new java.awt.Font("Roboto", 0, 18)); // NOI18N
+        lblcoche2.setText("Modelo de Vehículo:");
+        PanelCarros.add(lblcoche2, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 230, -1, -1));
+
+        txtmodvehiculo.setFont(new java.awt.Font("Roboto", 0, 18)); // NOI18N
+        txtmodvehiculo.setForeground(new java.awt.Color(51, 51, 51));
+        txtmodvehiculo.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        txtmodvehiculo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtmodvehiculoActionPerformed(evt);
+            }
+        });
+        PanelCarros.add(txtmodvehiculo, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 230, 200, -1));
+
+        lblcoche3.setFont(new java.awt.Font("Roboto", 0, 18)); // NOI18N
+        lblcoche3.setText("Color del Vehículo:");
+        PanelCarros.add(lblcoche3, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 290, -1, -1));
+
+        txtcolvehiculo.setFont(new java.awt.Font("Roboto", 0, 18)); // NOI18N
+        txtcolvehiculo.setForeground(new java.awt.Color(51, 51, 51));
+        txtcolvehiculo.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        PanelCarros.add(txtcolvehiculo, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 290, 200, -1));
+
+        lblcoche4.setFont(new java.awt.Font("Roboto", 0, 18)); // NOI18N
+        lblcoche4.setText("Marca del Vehículo:");
+        PanelCarros.add(lblcoche4, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 350, -1, -1));
+
+        txtmarvehiculo.setFont(new java.awt.Font("Roboto", 0, 18)); // NOI18N
+        txtmarvehiculo.setForeground(new java.awt.Color(51, 51, 51));
+        txtmarvehiculo.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        PanelCarros.add(txtmarvehiculo, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 350, 200, -1));
+
+        lblcoche6.setFont(new java.awt.Font("Roboto", 0, 18)); // NOI18N
+        lblcoche6.setText("Cedula del propietario:");
+        PanelCarros.add(lblcoche6, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 410, -1, -1));
+
+        txtcedcliente.setFont(new java.awt.Font("Roboto", 0, 18)); // NOI18N
+        txtcedcliente.setForeground(new java.awt.Color(51, 51, 51));
+        txtcedcliente.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        PanelCarros.add(txtcedcliente, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 410, 200, -1));
+
+        lblcoche5.setFont(new java.awt.Font("Roboto", 0, 18)); // NOI18N
+        lblcoche5.setText("Observaciónes:");
+        PanelCarros.add(lblcoche5, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 480, -1, -1));
+
+        txtobsvehiculo.setColumns(20);
+        txtobsvehiculo.setForeground(new java.awt.Color(51, 51, 51));
+        txtobsvehiculo.setRows(5);
+        txtobsvehiculo.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jScrollPane1.setViewportView(txtobsvehiculo);
+
+        PanelCarros.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 480, -1, -1));
+
+        jButton1.setBackground(new java.awt.Color(154, 0, 0));
+        jButton1.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
+        jButton1.setForeground(new java.awt.Color(255, 255, 255));
+        jButton1.setText("REGISTRAR VEHICULO");
+        jButton1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(154, 0, 0), 0));
         jButton1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jButton1MouseClicked(evt);
             }
         });
-        PanelCarros.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 250, -1, -1));
+        PanelCarros.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 590, 160, 40));
 
-        jTabbedPane1.addTab("tab1", PanelCarros);
+        fondopiratacoche.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/imagenes/FondoPirata.jpg"))); // NOI18N
+        PanelCarros.add(fondopiratacoche, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -30, -1, -1));
+
+        TabbedPaneMain.addTab("tab1", PanelCarros);
 
         PanelClientes.setBackground(new java.awt.Color(255, 255, 255));
         PanelClientes.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -120,7 +221,7 @@ public class Sistema extends javax.swing.JFrame {
         jLabel4.setText("CLIENTES");
         PanelClientes.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 290, 230, 80));
 
-        jTabbedPane1.addTab("tab3", PanelClientes);
+        TabbedPaneMain.addTab("tab3", PanelClientes);
 
         PanelPlanilla.setBackground(new java.awt.Color(255, 255, 255));
         PanelPlanilla.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -130,7 +231,7 @@ public class Sistema extends javax.swing.JFrame {
         jLabel5.setText("PLANILLA");
         PanelPlanilla.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 290, 240, 80));
 
-        jTabbedPane1.addTab("tab4", PanelPlanilla);
+        TabbedPaneMain.addTab("tab4", PanelPlanilla);
 
         PanelProducto.setBackground(new java.awt.Color(255, 255, 255));
         PanelProducto.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -145,7 +246,7 @@ public class Sistema extends javax.swing.JFrame {
         jLabel6.setText("REGISTRO PRODUCTOS");
         PanelProducto.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 20, 550, 80));
 
-        jTabbedPane1.addTab("tab5", PanelProducto);
+        TabbedPaneMain.addTab("tab5", PanelProducto);
 
         PanelFactura.setBackground(new java.awt.Color(255, 255, 255));
         PanelFactura.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -155,7 +256,7 @@ public class Sistema extends javax.swing.JFrame {
         jLabel7.setText("FACTURA");
         PanelFactura.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 290, 240, 80));
 
-        jTabbedPane1.addTab("tab6", PanelFactura);
+        TabbedPaneMain.addTab("tab6", PanelFactura);
 
         PanelSorteo.setBackground(new java.awt.Color(255, 255, 255));
         PanelSorteo.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -165,7 +266,7 @@ public class Sistema extends javax.swing.JFrame {
         jLabel8.setText("SORTEO");
         PanelSorteo.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 290, 240, 80));
 
-        jTabbedPane1.addTab("tab7", PanelSorteo);
+        TabbedPaneMain.addTab("tab7", PanelSorteo);
 
         PanelEmpleados.setBackground(new java.awt.Color(255, 255, 255));
         PanelEmpleados.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -321,9 +422,9 @@ public class Sistema extends javax.swing.JFrame {
 
         PanelEmpleados.add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 560, 190, 60));
 
-        jTabbedPane1.addTab("tab2", PanelEmpleados);
+        TabbedPaneMain.addTab("tab2", PanelEmpleados);
 
-        Background.add(jTabbedPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 0, 1120, 720));
+        Background.add(TabbedPaneMain, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 0, 1120, 720));
 
         IconCarro.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/imagenes/CarroIcon.png"))); // NOI18N
         IconCarro.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -533,16 +634,17 @@ public class Sistema extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    crudsql objcrud=new crudsql();
     private void IconCarroMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_IconCarroMouseClicked
-      jTabbedPane1.setSelectedIndex(0);
+      TabbedPaneMain.setSelectedIndex(0);
     }//GEN-LAST:event_IconCarroMouseClicked
 
     private void IconTrabajadorMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_IconTrabajadorMouseClicked
-        jTabbedPane1.setSelectedIndex(1);
+        TabbedPaneMain.setSelectedIndex(1);
     }//GEN-LAST:event_IconTrabajadorMouseClicked
 
     private void IconClienteMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_IconClienteMouseClicked
-        jTabbedPane1.setSelectedIndex(2);
+        TabbedPaneMain.setSelectedIndex(2);
     }//GEN-LAST:event_IconClienteMouseClicked
 
     private void txtcerrarsesionMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_txtcerrarsesionMouseClicked
@@ -552,32 +654,32 @@ public class Sistema extends javax.swing.JFrame {
     }//GEN-LAST:event_txtcerrarsesionMouseClicked
 
     private void btnCarroMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnCarroMouseClicked
-        jTabbedPane1.setSelectedIndex(0);
+        TabbedPaneMain.setSelectedIndex(0);
     }//GEN-LAST:event_btnCarroMouseClicked
 
     private void btntrabajadorMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btntrabajadorMouseClicked
-        jTabbedPane1.setSelectedIndex(1);        
+        TabbedPaneMain.setSelectedIndex(1);        
     }//GEN-LAST:event_btntrabajadorMouseClicked
 
     private void btnclienteMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnclienteMouseClicked
-        jTabbedPane1.setSelectedIndex(2);
+        TabbedPaneMain.setSelectedIndex(2);
     }//GEN-LAST:event_btnclienteMouseClicked
         
     private void btnfacturaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnfacturaMouseClicked
-        jTabbedPane1.setSelectedIndex(5);
+        TabbedPaneMain.setSelectedIndex(5);
     }//GEN-LAST:event_btnfacturaMouseClicked
 
     private void IconPlantillaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_IconPlantillaMouseClicked
-        jTabbedPane1.setSelectedIndex(3);
+        TabbedPaneMain.setSelectedIndex(3);
     }//GEN-LAST:event_IconPlantillaMouseClicked
 
     private void btnPlantillaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnPlantillaMouseClicked
-        jTabbedPane1.setSelectedIndex(3);
+        TabbedPaneMain.setSelectedIndex(3);
     }//GEN-LAST:event_btnPlantillaMouseClicked
 
     
     private void btnproductoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnproductoMouseClicked
-        jTabbedPane1.setSelectedIndex(4);
+        TabbedPaneMain.setSelectedIndex(4);
     }//GEN-LAST:event_btnproductoMouseClicked
 
     private void PanelProductoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PanelProductoMouseClicked
@@ -590,8 +692,17 @@ public class Sistema extends javax.swing.JFrame {
         this.dispose();
     }//GEN-LAST:event_btncerrarsesionMouseClicked
 
+    private void txtplavehiculoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtplavehiculoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtplavehiculoActionPerformed
+
+    private void txtmodvehiculoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtmodvehiculoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtmodvehiculoActionPerformed
+
     private void jButton1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MouseClicked
-        System.out.println("hola");
+        objcrud.insertarVehiculos(txtplavehiculo.getText(), txttipvehiculo.getText(), txtmodvehiculo.getText(), txtcolvehiculo.getText(), txtcedcliente.getText(),
+                txtobsvehiculo.getText(), txtcedcliente.getText());
     }//GEN-LAST:event_jButton1MouseClicked
 
     private void txtsulempleadoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtsulempleadoActionPerformed
@@ -693,6 +804,7 @@ public class Sistema extends javax.swing.JFrame {
     private javax.swing.JPanel PanelPlanilla;
     private javax.swing.JPanel PanelProducto;
     private javax.swing.JPanel PanelSorteo;
+    private javax.swing.JTabbedPane TabbedPaneMain;
     private javax.swing.JPanel btnCarro;
     private javax.swing.JPanel btnPlantilla;
     private javax.swing.JPanel btncerrarsesion;
@@ -701,13 +813,13 @@ public class Sistema extends javax.swing.JFrame {
     private javax.swing.JPanel btnproducto;
     private javax.swing.JLabel btnregistrarempleado;
     private javax.swing.JPanel btntrabajador;
+    private javax.swing.JLabel fondopiratacoche;
     private javax.swing.JLabel iconproducto;
     private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel17;
     private javax.swing.JLabel jLabel18;
-    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
@@ -715,26 +827,41 @@ public class Sistema extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JTabbedPane jTabbedPane1;
+    private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JLabel lbapeempleado;
     private javax.swing.JLabel lbcedempleado;
     private javax.swing.JLabel lbdirempleado;
     private javax.swing.JLabel lbemail;
     private javax.swing.JLabel lblciuempleado;
+    private javax.swing.JLabel lblcoche;
+    private javax.swing.JLabel lblcoche1;
+    private javax.swing.JLabel lblcoche2;
+    private javax.swing.JLabel lblcoche3;
+    private javax.swing.JLabel lblcoche4;
+    private javax.swing.JLabel lblcoche5;
+    private javax.swing.JLabel lblcoche6;
+    private javax.swing.JLabel lblregistrarcoches;
     private javax.swing.JLabel lbnomempleado;
     private javax.swing.JLabel lbtelempleado;
     private javax.swing.JTextField txtapeempleado;
+    private javax.swing.JTextField txtcedcliente;
     private javax.swing.JTextField txtcedempleado1;
     private javax.swing.JLabel txtcerrarsesion;
     private javax.swing.JTextField txtciuempleado;
+    private javax.swing.JTextField txtcolvehiculo;
     private javax.swing.JTextField txtdirempleado;
     private javax.swing.JTextField txtespempleado;
     private javax.swing.JTextField txtfecempleado;
     private javax.swing.JTextField txtingempleado7;
     private javax.swing.JTextField txtmailempleado;
+    private javax.swing.JTextField txtmarvehiculo;
+    private javax.swing.JTextField txtmodvehiculo;
     private javax.swing.JTextField txtnomempleado;
+    private javax.swing.JTextArea txtobsvehiculo;
+    private javax.swing.JTextField txtplavehiculo;
     private javax.swing.JTextField txtsulempleado;
     private javax.swing.JTextField txttelempleado;
+    private javax.swing.JTextField txttipvehiculo;
     // End of variables declaration//GEN-END:variables
 
 }

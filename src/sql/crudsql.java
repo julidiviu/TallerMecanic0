@@ -33,17 +33,5 @@ public class crudsql {
         }
     }
     
-    public void insertarEmpleado(String cedula,String nombre,String apellido,String direccion,String telefono,String mail,String ciudad,String fecha ){
-        try {
-            Connection conexion=con.conectar();
-            java.sql.Statement st=conexion.createStatement();
-            String sql="insert into clientes(cedcliente,nomcliente,apecliente,dircliente,telcliente,mailcliente,ciucliente,feccliente) values('"+cedula+"','"+nombre+"','"+apellido+"','"+direccion+"','"+telefono+"','"+mail+"','"+ciudad+"','"+fecha+"')";
-            st.execute(sql);
-            st.close();
-            conexion.close();
-            JOptionPane.showMessageDialog(null,"registro exitoso","Mensaje",JOptionPane.INFORMATION_MESSAGE);
-        } catch (Exception e) {
-             JOptionPane.showMessageDialog(null,"nahh"+e,"Mensaje",JOptionPane.ERROR_MESSAGE);
-        }
-    }
+    
 }
