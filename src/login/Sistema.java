@@ -93,7 +93,7 @@ public class Sistema extends javax.swing.JFrame {
         lblregistrarcoches.setFont(new java.awt.Font("Roboto Black", 0, 36)); // NOI18N
         lblregistrarcoches.setForeground(new java.awt.Color(102, 102, 102));
         lblregistrarcoches.setText("REGISTRAR VEHICULOS");
-        PanelCarros.add(lblregistrarcoches, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 10, -1, -1));
+        PanelCarros.add(lblregistrarcoches, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, -1, -1));
 
         lblcoche.setFont(new java.awt.Font("Roboto", 0, 18)); // NOI18N
         lblcoche.setForeground(new java.awt.Color(0, 0, 0));
@@ -183,7 +183,7 @@ public class Sistema extends javax.swing.JFrame {
         txtobsvehiculo.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jScrollPane1.setViewportView(txtobsvehiculo);
 
-        PanelCarros.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 480, -1, -1));
+        PanelCarros.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 480, -1, -1));
 
         jButton1.setBackground(new java.awt.Color(154, 0, 0));
         jButton1.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
