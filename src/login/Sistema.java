@@ -61,6 +61,7 @@ public class Sistema extends javax.swing.JFrame {
         jLabel6 = new javax.swing.JLabel();
         PanelFactura = new javax.swing.JPanel();
         jLabel7 = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
         PanelSorteo = new javax.swing.JPanel();
         jLabel8 = new javax.swing.JLabel();
         IconCarro = new javax.swing.JLabel();
@@ -96,11 +97,9 @@ public class Sistema extends javax.swing.JFrame {
         PanelCarros.add(lblregistrarcoches, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 10, -1, -1));
 
         lblcoche.setFont(new java.awt.Font("Roboto", 0, 18)); // NOI18N
-        lblcoche.setForeground(new java.awt.Color(0, 0, 0));
         lblcoche.setText("Placa del Vehículo:");
         PanelCarros.add(lblcoche, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 110, -1, -1));
 
-        txtplavehiculo.setBackground(new java.awt.Color(255, 255, 255));
         txtplavehiculo.setFont(new java.awt.Font("Roboto", 0, 18)); // NOI18N
         txtplavehiculo.setForeground(new java.awt.Color(51, 51, 51));
         txtplavehiculo.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
@@ -112,22 +111,18 @@ public class Sistema extends javax.swing.JFrame {
         PanelCarros.add(txtplavehiculo, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 110, 200, -1));
 
         lblcoche1.setFont(new java.awt.Font("Roboto", 0, 18)); // NOI18N
-        lblcoche1.setForeground(new java.awt.Color(0, 0, 0));
         lblcoche1.setText("Tipo de Vehículo:");
         PanelCarros.add(lblcoche1, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 170, -1, -1));
 
-        txttipvehiculo.setBackground(new java.awt.Color(255, 255, 255));
         txttipvehiculo.setFont(new java.awt.Font("Roboto", 0, 18)); // NOI18N
         txttipvehiculo.setForeground(new java.awt.Color(51, 51, 51));
         txttipvehiculo.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         PanelCarros.add(txttipvehiculo, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 170, 200, -1));
 
         lblcoche2.setFont(new java.awt.Font("Roboto", 0, 18)); // NOI18N
-        lblcoche2.setForeground(new java.awt.Color(0, 0, 0));
         lblcoche2.setText("Modelo de Vehículo:");
         PanelCarros.add(lblcoche2, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 230, -1, -1));
 
-        txtmodvehiculo.setBackground(new java.awt.Color(255, 255, 255));
         txtmodvehiculo.setFont(new java.awt.Font("Roboto", 0, 18)); // NOI18N
         txtmodvehiculo.setForeground(new java.awt.Color(51, 51, 51));
         txtmodvehiculo.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
@@ -139,44 +134,36 @@ public class Sistema extends javax.swing.JFrame {
         PanelCarros.add(txtmodvehiculo, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 230, 200, -1));
 
         lblcoche3.setFont(new java.awt.Font("Roboto", 0, 18)); // NOI18N
-        lblcoche3.setForeground(new java.awt.Color(0, 0, 0));
         lblcoche3.setText("Color del Vehículo:");
         PanelCarros.add(lblcoche3, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 290, -1, -1));
 
-        txtcolvehiculo.setBackground(new java.awt.Color(255, 255, 255));
         txtcolvehiculo.setFont(new java.awt.Font("Roboto", 0, 18)); // NOI18N
         txtcolvehiculo.setForeground(new java.awt.Color(51, 51, 51));
         txtcolvehiculo.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         PanelCarros.add(txtcolvehiculo, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 290, 200, -1));
 
         lblcoche4.setFont(new java.awt.Font("Roboto", 0, 18)); // NOI18N
-        lblcoche4.setForeground(new java.awt.Color(0, 0, 0));
         lblcoche4.setText("Marca del Vehículo:");
         PanelCarros.add(lblcoche4, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 350, -1, -1));
 
-        txtmarvehiculo.setBackground(new java.awt.Color(255, 255, 255));
         txtmarvehiculo.setFont(new java.awt.Font("Roboto", 0, 18)); // NOI18N
         txtmarvehiculo.setForeground(new java.awt.Color(51, 51, 51));
         txtmarvehiculo.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         PanelCarros.add(txtmarvehiculo, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 350, 200, -1));
 
         lblcoche6.setFont(new java.awt.Font("Roboto", 0, 18)); // NOI18N
-        lblcoche6.setForeground(new java.awt.Color(0, 0, 0));
         lblcoche6.setText("Cedula del propietario:");
         PanelCarros.add(lblcoche6, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 410, -1, -1));
 
-        txtcedcliente.setBackground(new java.awt.Color(255, 255, 255));
         txtcedcliente.setFont(new java.awt.Font("Roboto", 0, 18)); // NOI18N
         txtcedcliente.setForeground(new java.awt.Color(51, 51, 51));
         txtcedcliente.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         PanelCarros.add(txtcedcliente, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 410, 200, -1));
 
         lblcoche5.setFont(new java.awt.Font("Roboto", 0, 18)); // NOI18N
-        lblcoche5.setForeground(new java.awt.Color(0, 0, 0));
         lblcoche5.setText("Observaciónes:");
         PanelCarros.add(lblcoche5, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 480, -1, -1));
 
-        txtobsvehiculo.setBackground(new java.awt.Color(255, 255, 255));
         txtobsvehiculo.setColumns(20);
         txtobsvehiculo.setForeground(new java.awt.Color(51, 51, 51));
         txtobsvehiculo.setRows(5);
@@ -255,6 +242,10 @@ public class Sistema extends javax.swing.JFrame {
         jLabel7.setForeground(new java.awt.Color(102, 102, 102));
         jLabel7.setText("FACTURA");
         PanelFactura.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 290, 240, 80));
+
+        jLabel1.setFont(new java.awt.Font("Segoe UI", 0, 48)); // NOI18N
+        jLabel1.setText("MI PICHA ");
+        PanelFactura.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 120, 230, 100));
 
         TabbedPaneMain.addTab("tab6", PanelFactura);
 
@@ -437,7 +428,6 @@ public class Sistema extends javax.swing.JFrame {
         });
 
         txtcerrarsesion.setFont(new java.awt.Font("Roboto Medium", 0, 14)); // NOI18N
-        txtcerrarsesion.setForeground(new java.awt.Color(0, 0, 0));
         txtcerrarsesion.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         txtcerrarsesion.setText("CERRAR SESIÓN");
         txtcerrarsesion.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -450,7 +440,7 @@ public class Sistema extends javax.swing.JFrame {
         btncerrarsesion.setLayout(btncerrarsesionLayout);
         btncerrarsesionLayout.setHorizontalGroup(
             btncerrarsesionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(txtcerrarsesion, javax.swing.GroupLayout.DEFAULT_SIZE, 110, Short.MAX_VALUE)
+            .addComponent(txtcerrarsesion, javax.swing.GroupLayout.PREFERRED_SIZE, 110, Short.MAX_VALUE)
         );
         btncerrarsesionLayout.setVerticalGroup(
             btncerrarsesionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -616,6 +606,7 @@ public class Sistema extends javax.swing.JFrame {
     private javax.swing.JLabel fondopiratacoche;
     private javax.swing.JLabel iconproducto;
     private javax.swing.JButton jButton1;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
