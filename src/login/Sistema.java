@@ -51,17 +51,6 @@ public class Sistema extends javax.swing.JFrame {
         txtobsvehiculo = new javax.swing.JTextArea();
         jButton1 = new javax.swing.JButton();
         fondopiratacoche = new javax.swing.JLabel();
-        PanelClientes = new javax.swing.JPanel();
-        jLabel4 = new javax.swing.JLabel();
-        PanelPlanilla = new javax.swing.JPanel();
-        jLabel5 = new javax.swing.JLabel();
-        PanelProducto = new javax.swing.JPanel();
-        jLabel6 = new javax.swing.JLabel();
-        PanelFactura = new javax.swing.JPanel();
-        jLabel7 = new javax.swing.JLabel();
-        jLabel1 = new javax.swing.JLabel();
-        PanelSorteo = new javax.swing.JPanel();
-        jLabel8 = new javax.swing.JLabel();
         PanelEmpleados = new javax.swing.JPanel();
         jLabel3 = new javax.swing.JLabel();
         lbcedempleado = new javax.swing.JLabel();
@@ -88,6 +77,16 @@ public class Sistema extends javax.swing.JFrame {
         txtespempleado = new javax.swing.JTextField();
         jPanel1 = new javax.swing.JPanel();
         btnregistrarempleado = new javax.swing.JLabel();
+        PanelClientes = new javax.swing.JPanel();
+        jLabel4 = new javax.swing.JLabel();
+        PanelPlanilla = new javax.swing.JPanel();
+        jLabel5 = new javax.swing.JLabel();
+        PanelProducto = new javax.swing.JPanel();
+        jLabel6 = new javax.swing.JLabel();
+        PanelFactura = new javax.swing.JPanel();
+        jLabel7 = new javax.swing.JLabel();
+        PanelSorteo = new javax.swing.JPanel();
+        jLabel8 = new javax.swing.JLabel();
         IconCarro = new javax.swing.JLabel();
         btnCarro = new javax.swing.JPanel();
         IconTrabajador = new javax.swing.JLabel();
@@ -212,66 +211,6 @@ public class Sistema extends javax.swing.JFrame {
         PanelCarros.add(fondopiratacoche, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -30, -1, -1));
 
         TabbedPaneMain.addTab("tab1", PanelCarros);
-
-        PanelClientes.setBackground(new java.awt.Color(255, 255, 255));
-        PanelClientes.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        jLabel4.setBackground(new java.awt.Color(102, 102, 102));
-        jLabel4.setFont(new java.awt.Font("Roboto Black", 0, 48)); // NOI18N
-        jLabel4.setForeground(new java.awt.Color(102, 102, 102));
-        jLabel4.setText("CLIENTES");
-        PanelClientes.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 290, 230, 80));
-
-        TabbedPaneMain.addTab("tab3", PanelClientes);
-
-        PanelPlanilla.setBackground(new java.awt.Color(255, 255, 255));
-        PanelPlanilla.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        jLabel5.setFont(new java.awt.Font("Roboto Black", 0, 48)); // NOI18N
-        jLabel5.setForeground(new java.awt.Color(102, 102, 102));
-        jLabel5.setText("PLANILLA");
-        PanelPlanilla.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 290, 240, 80));
-
-        TabbedPaneMain.addTab("tab4", PanelPlanilla);
-
-        PanelProducto.setBackground(new java.awt.Color(255, 255, 255));
-        PanelProducto.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                PanelProductoMouseClicked(evt);
-            }
-        });
-        PanelProducto.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        jLabel6.setFont(new java.awt.Font("Roboto Black", 0, 48)); // NOI18N
-        jLabel6.setForeground(new java.awt.Color(102, 102, 102));
-        jLabel6.setText("REGISTRO PRODUCTOS");
-        PanelProducto.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 20, 550, 80));
-
-        TabbedPaneMain.addTab("tab5", PanelProducto);
-
-        PanelFactura.setBackground(new java.awt.Color(255, 255, 255));
-        PanelFactura.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        jLabel7.setFont(new java.awt.Font("Roboto Black", 0, 48)); // NOI18N
-        jLabel7.setForeground(new java.awt.Color(102, 102, 102));
-        jLabel7.setText("FACTURA");
-        PanelFactura.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 290, 240, 80));
-
-        jLabel1.setFont(new java.awt.Font("Segoe UI", 0, 48)); // NOI18N
-        jLabel1.setText("MI PICHA ");
-        PanelFactura.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 190, 230, 100));
-
-        TabbedPaneMain.addTab("tab6", PanelFactura);
-
-        PanelSorteo.setBackground(new java.awt.Color(255, 255, 255));
-        PanelSorteo.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        jLabel8.setFont(new java.awt.Font("Roboto Black", 0, 48)); // NOI18N
-        jLabel8.setForeground(new java.awt.Color(102, 102, 102));
-        jLabel8.setText("SORTEO");
-        PanelSorteo.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 290, 240, 80));
-
-        TabbedPaneMain.addTab("tab7", PanelSorteo);
 
         PanelEmpleados.setBackground(new java.awt.Color(255, 255, 255));
         PanelEmpleados.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -428,6 +367,62 @@ public class Sistema extends javax.swing.JFrame {
         PanelEmpleados.add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 560, 190, 60));
 
         TabbedPaneMain.addTab("tab2", PanelEmpleados);
+
+        PanelClientes.setBackground(new java.awt.Color(255, 255, 255));
+        PanelClientes.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel4.setBackground(new java.awt.Color(102, 102, 102));
+        jLabel4.setFont(new java.awt.Font("Roboto Black", 0, 48)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(102, 102, 102));
+        jLabel4.setText("CLIENTES");
+        PanelClientes.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 290, 230, 80));
+
+        TabbedPaneMain.addTab("tab3", PanelClientes);
+
+        PanelPlanilla.setBackground(new java.awt.Color(255, 255, 255));
+        PanelPlanilla.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel5.setFont(new java.awt.Font("Roboto Black", 0, 48)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(102, 102, 102));
+        jLabel5.setText("PLANILLA");
+        PanelPlanilla.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 290, 240, 80));
+
+        TabbedPaneMain.addTab("tab4", PanelPlanilla);
+
+        PanelProducto.setBackground(new java.awt.Color(255, 255, 255));
+        PanelProducto.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                PanelProductoMouseClicked(evt);
+            }
+        });
+        PanelProducto.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel6.setFont(new java.awt.Font("Roboto Black", 0, 48)); // NOI18N
+        jLabel6.setForeground(new java.awt.Color(102, 102, 102));
+        jLabel6.setText("REGISTRO PRODUCTOS");
+        PanelProducto.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 290, 550, 80));
+
+        TabbedPaneMain.addTab("tab5", PanelProducto);
+
+        PanelFactura.setBackground(new java.awt.Color(255, 255, 255));
+        PanelFactura.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel7.setFont(new java.awt.Font("Roboto Black", 0, 48)); // NOI18N
+        jLabel7.setForeground(new java.awt.Color(102, 102, 102));
+        jLabel7.setText("FACTURA");
+        PanelFactura.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 290, 240, 80));
+
+        TabbedPaneMain.addTab("tab6", PanelFactura);
+
+        PanelSorteo.setBackground(new java.awt.Color(255, 255, 255));
+        PanelSorteo.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel8.setFont(new java.awt.Font("Roboto Black", 0, 48)); // NOI18N
+        jLabel8.setForeground(new java.awt.Color(102, 102, 102));
+        jLabel8.setText("SORTEO");
+        PanelSorteo.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 290, 240, 80));
+
+        TabbedPaneMain.addTab("tab7", PanelSorteo);
 
         Background.add(TabbedPaneMain, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 0, 1120, 720));
 
@@ -821,7 +816,6 @@ public class Sistema extends javax.swing.JFrame {
     private javax.swing.JLabel fondopiratacoche;
     private javax.swing.JLabel iconproducto;
     private javax.swing.JButton jButton1;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel17;
