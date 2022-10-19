@@ -32,4 +32,6 @@ public class crudsql {
              JOptionPane.showMessageDialog(null,"nahh"+e,"Mensaje",JOptionPane.ERROR_MESSAGE);
         }
     }
+    
+    
 }
