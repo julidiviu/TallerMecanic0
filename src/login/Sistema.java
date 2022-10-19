@@ -33,6 +33,7 @@ public class Sistema extends javax.swing.JFrame {
         Background = new javax.swing.JPanel();
         TabbedPaneMain = new javax.swing.JTabbedPane();
         PanelCarros = new javax.swing.JPanel();
+        jButton2 = new javax.swing.JButton();
         lblregistrarcoches = new javax.swing.JLabel();
         lblcoche = new javax.swing.JLabel();
         txtplavehiculo = new javax.swing.JTextField();
@@ -113,6 +114,9 @@ public class Sistema extends javax.swing.JFrame {
         PanelCarros.setBackground(new java.awt.Color(255, 255, 255));
         PanelCarros.setForeground(new java.awt.Color(255, 0, 0));
         PanelCarros.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jButton2.setText("jButton2");
+        PanelCarros.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 270, -1, -1));
 
         lblregistrarcoches.setFont(new java.awt.Font("Roboto Black", 0, 36)); // NOI18N
         lblregistrarcoches.setForeground(new java.awt.Color(102, 102, 102));
@@ -816,6 +820,7 @@ public class Sistema extends javax.swing.JFrame {
     private javax.swing.JLabel fondopiratacoche;
     private javax.swing.JLabel iconproducto;
     private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel17;
