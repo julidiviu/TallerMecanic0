@@ -59,6 +59,7 @@ public class Sistema extends javax.swing.JFrame {
         jLabel6 = new javax.swing.JLabel();
         PanelFactura = new javax.swing.JPanel();
         jLabel7 = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
         PanelSorteo = new javax.swing.JPanel();
         jLabel8 = new javax.swing.JLabel();
         PanelEmpleados = new javax.swing.JPanel();
@@ -255,6 +256,10 @@ public class Sistema extends javax.swing.JFrame {
         jLabel7.setForeground(new java.awt.Color(102, 102, 102));
         jLabel7.setText("FACTURA");
         PanelFactura.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 290, 240, 80));
+
+        jLabel1.setFont(new java.awt.Font("Segoe UI", 0, 48)); // NOI18N
+        jLabel1.setText("MI PICHA ");
+        PanelFactura.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 190, 230, 100));
 
         TabbedPaneMain.addTab("tab6", PanelFactura);
 
@@ -816,6 +821,7 @@ public class Sistema extends javax.swing.JFrame {
     private javax.swing.JLabel fondopiratacoche;
     private javax.swing.JLabel iconproducto;
     private javax.swing.JButton jButton1;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel17;
