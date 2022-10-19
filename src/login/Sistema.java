@@ -33,8 +33,6 @@ public class Sistema extends javax.swing.JFrame {
         PanelCarros = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
-        PanelEmpleados = new javax.swing.JPanel();
-        jLabel3 = new javax.swing.JLabel();
         PanelClientes = new javax.swing.JPanel();
         jLabel4 = new javax.swing.JLabel();
         PanelPlanilla = new javax.swing.JPanel();
@@ -45,6 +43,32 @@ public class Sistema extends javax.swing.JFrame {
         jLabel7 = new javax.swing.JLabel();
         PanelSorteo = new javax.swing.JPanel();
         jLabel8 = new javax.swing.JLabel();
+        PanelEmpleados = new javax.swing.JPanel();
+        jLabel3 = new javax.swing.JLabel();
+        lbcedempleado = new javax.swing.JLabel();
+        lbnomempleado = new javax.swing.JLabel();
+        lbapeempleado = new javax.swing.JLabel();
+        lbdirempleado = new javax.swing.JLabel();
+        lbtelempleado = new javax.swing.JLabel();
+        lbemail = new javax.swing.JLabel();
+        lblciuempleado = new javax.swing.JLabel();
+        jLabel15 = new javax.swing.JLabel();
+        jLabel16 = new javax.swing.JLabel();
+        jLabel17 = new javax.swing.JLabel();
+        jLabel18 = new javax.swing.JLabel();
+        txtsulempleado = new javax.swing.JTextField();
+        txtnomempleado = new javax.swing.JTextField();
+        txtcedempleado1 = new javax.swing.JTextField();
+        txtapeempleado = new javax.swing.JTextField();
+        txtdirempleado = new javax.swing.JTextField();
+        txttelempleado = new javax.swing.JTextField();
+        txtmailempleado = new javax.swing.JTextField();
+        txtciuempleado = new javax.swing.JTextField();
+        txtfecempleado = new javax.swing.JTextField();
+        txtingempleado7 = new javax.swing.JTextField();
+        txtespempleado = new javax.swing.JTextField();
+        jPanel1 = new javax.swing.JPanel();
+        btnregistrarempleado = new javax.swing.JLabel();
         IconCarro = new javax.swing.JLabel();
         btnCarro = new javax.swing.JPanel();
         IconTrabajador = new javax.swing.JLabel();
@@ -87,16 +111,6 @@ public class Sistema extends javax.swing.JFrame {
 
         jTabbedPane1.addTab("tab1", PanelCarros);
 
-        PanelEmpleados.setBackground(new java.awt.Color(255, 255, 255));
-        PanelEmpleados.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        jLabel3.setFont(new java.awt.Font("Roboto Black", 0, 48)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(102, 102, 102));
-        jLabel3.setText("EMPLEADOS");
-        PanelEmpleados.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 300, 280, 80));
-
-        jTabbedPane1.addTab("tab2", PanelEmpleados);
-
         PanelClientes.setBackground(new java.awt.Color(255, 255, 255));
         PanelClientes.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -128,8 +142,8 @@ public class Sistema extends javax.swing.JFrame {
 
         jLabel6.setFont(new java.awt.Font("Roboto Black", 0, 48)); // NOI18N
         jLabel6.setForeground(new java.awt.Color(102, 102, 102));
-        jLabel6.setText("PRODUCTO");
-        PanelProducto.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 290, 270, 80));
+        jLabel6.setText("REGISTRO PRODUCTOS");
+        PanelProducto.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 20, 550, 80));
 
         jTabbedPane1.addTab("tab5", PanelProducto);
 
@@ -152,6 +166,162 @@ public class Sistema extends javax.swing.JFrame {
         PanelSorteo.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 290, 240, 80));
 
         jTabbedPane1.addTab("tab7", PanelSorteo);
+
+        PanelEmpleados.setBackground(new java.awt.Color(255, 255, 255));
+        PanelEmpleados.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel3.setFont(new java.awt.Font("Roboto Black", 0, 48)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(102, 102, 102));
+        jLabel3.setText("REGISTRO EMPLEADOS");
+        PanelEmpleados.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 50, 540, 80));
+
+        lbcedempleado.setText("Cedula:");
+        PanelEmpleados.add(lbcedempleado, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 190, 60, 20));
+
+        lbnomempleado.setText("Nombre:");
+        PanelEmpleados.add(lbnomempleado, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 240, -1, -1));
+
+        lbapeempleado.setText("Apellido:");
+        PanelEmpleados.add(lbapeempleado, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 290, -1, -1));
+
+        lbdirempleado.setText("Dirección:");
+        PanelEmpleados.add(lbdirempleado, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 340, -1, -1));
+
+        lbtelempleado.setText("Telefono:");
+        PanelEmpleados.add(lbtelempleado, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 390, -1, -1));
+
+        lbemail.setText("Email:");
+        PanelEmpleados.add(lbemail, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 440, -1, -1));
+
+        lblciuempleado.setText("Ciudad:");
+        PanelEmpleados.add(lblciuempleado, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 190, -1, -1));
+
+        jLabel15.setText("Fecha:");
+        PanelEmpleados.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 250, -1, -1));
+
+        jLabel16.setText("Fecha Ingreso:");
+        PanelEmpleados.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 290, -1, 20));
+
+        jLabel17.setText("Especialidad:");
+        PanelEmpleados.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 350, -1, -1));
+
+        jLabel18.setText("Sueldo:");
+        PanelEmpleados.add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 400, -1, -1));
+
+        txtsulempleado.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(102, 0, 0), 1, true));
+        txtsulempleado.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtsulempleadoActionPerformed(evt);
+            }
+        });
+        PanelEmpleados.add(txtsulempleado, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 390, 200, 30));
+
+        txtnomempleado.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(102, 0, 0), 1, true));
+        PanelEmpleados.add(txtnomempleado, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 230, 200, 30));
+
+        txtcedempleado1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(102, 0, 0), 1, true));
+        txtcedempleado1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtcedempleado1ActionPerformed(evt);
+            }
+        });
+        PanelEmpleados.add(txtcedempleado1, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 180, 200, 30));
+
+        txtapeempleado.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(102, 0, 0), 1, true));
+        txtapeempleado.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtapeempleadoActionPerformed(evt);
+            }
+        });
+        PanelEmpleados.add(txtapeempleado, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 280, 200, 30));
+
+        txtdirempleado.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(102, 0, 0), 1, true));
+        txtdirempleado.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtdirempleadoActionPerformed(evt);
+            }
+        });
+        PanelEmpleados.add(txtdirempleado, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 330, 200, 30));
+
+        txttelempleado.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(102, 0, 0), 1, true));
+        txttelempleado.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txttelempleadoActionPerformed(evt);
+            }
+        });
+        PanelEmpleados.add(txttelempleado, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 380, 200, 30));
+
+        txtmailempleado.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(102, 0, 0), 1, true));
+        txtmailempleado.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtmailempleadoActionPerformed(evt);
+            }
+        });
+        PanelEmpleados.add(txtmailempleado, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 430, 200, 30));
+
+        txtciuempleado.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(102, 0, 0), 1, true));
+        txtciuempleado.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtciuempleadoActionPerformed(evt);
+            }
+        });
+        PanelEmpleados.add(txtciuempleado, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 180, 200, 30));
+
+        txtfecempleado.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(102, 0, 0), 1, true));
+        txtfecempleado.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtfecempleadoActionPerformed(evt);
+            }
+        });
+        PanelEmpleados.add(txtfecempleado, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 240, 200, 30));
+
+        txtingempleado7.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(102, 0, 0), 1, true));
+        txtingempleado7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtingempleado7ActionPerformed(evt);
+            }
+        });
+        PanelEmpleados.add(txtingempleado7, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 290, 200, 30));
+
+        txtespempleado.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(102, 0, 0), 1, true));
+        txtespempleado.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtespempleadoActionPerformed(evt);
+            }
+        });
+        PanelEmpleados.add(txtespempleado, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 340, 200, 30));
+
+        jPanel1.setBackground(new java.awt.Color(102, 0, 0));
+
+        btnregistrarempleado.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        btnregistrarempleado.setForeground(new java.awt.Color(255, 255, 255));
+        btnregistrarempleado.setText("REGISTRAR");
+        btnregistrarempleado.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnregistrarempleadoMouseClicked(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                .addContainerGap(50, Short.MAX_VALUE)
+                .addComponent(btnregistrarempleado, javax.swing.GroupLayout.PREFERRED_SIZE, 108, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(32, 32, 32))
+        );
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(16, 16, 16)
+                .addComponent(btnregistrarempleado)
+                .addContainerGap(19, Short.MAX_VALUE))
+        );
+
+        PanelEmpleados.add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 560, 190, 60));
+
+        jTabbedPane1.addTab("tab2", PanelEmpleados);
 
         Background.add(jTabbedPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 0, 1120, 720));
 
@@ -322,7 +492,6 @@ public class Sistema extends javax.swing.JFrame {
         });
 
         txtcerrarsesion.setFont(new java.awt.Font("Roboto Medium", 0, 14)); // NOI18N
-        txtcerrarsesion.setForeground(new java.awt.Color(0, 0, 0));
         txtcerrarsesion.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         txtcerrarsesion.setText("CERRAR SESIÓN");
         txtcerrarsesion.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -425,6 +594,50 @@ public class Sistema extends javax.swing.JFrame {
         System.out.println("hola");
     }//GEN-LAST:event_jButton1MouseClicked
 
+    private void txtsulempleadoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtsulempleadoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtsulempleadoActionPerformed
+
+    private void txtcedempleado1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtcedempleado1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtcedempleado1ActionPerformed
+
+    private void txtapeempleadoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtapeempleadoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtapeempleadoActionPerformed
+
+    private void txtdirempleadoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtdirempleadoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtdirempleadoActionPerformed
+
+    private void txttelempleadoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txttelempleadoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txttelempleadoActionPerformed
+
+    private void txtmailempleadoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtmailempleadoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtmailempleadoActionPerformed
+
+    private void txtciuempleadoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtciuempleadoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtciuempleadoActionPerformed
+
+    private void txtfecempleadoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtfecempleadoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtfecempleadoActionPerformed
+
+    private void txtingempleado7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtingempleado7ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtingempleado7ActionPerformed
+
+    private void txtespempleadoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtespempleadoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtespempleadoActionPerformed
+
+    private void btnregistrarempleadoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnregistrarempleadoMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnregistrarempleadoMouseClicked
+
     
     
     
@@ -486,9 +699,14 @@ public class Sistema extends javax.swing.JFrame {
     private javax.swing.JPanel btncliente;
     private javax.swing.JPanel btnfactura;
     private javax.swing.JPanel btnproducto;
+    private javax.swing.JLabel btnregistrarempleado;
     private javax.swing.JPanel btntrabajador;
     private javax.swing.JLabel iconproducto;
     private javax.swing.JButton jButton1;
+    private javax.swing.JLabel jLabel15;
+    private javax.swing.JLabel jLabel16;
+    private javax.swing.JLabel jLabel17;
+    private javax.swing.JLabel jLabel18;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
@@ -496,8 +714,27 @@ public class Sistema extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
+    private javax.swing.JPanel jPanel1;
     private javax.swing.JTabbedPane jTabbedPane1;
+    private javax.swing.JLabel lbapeempleado;
+    private javax.swing.JLabel lbcedempleado;
+    private javax.swing.JLabel lbdirempleado;
+    private javax.swing.JLabel lbemail;
+    private javax.swing.JLabel lblciuempleado;
+    private javax.swing.JLabel lbnomempleado;
+    private javax.swing.JLabel lbtelempleado;
+    private javax.swing.JTextField txtapeempleado;
+    private javax.swing.JTextField txtcedempleado1;
     private javax.swing.JLabel txtcerrarsesion;
+    private javax.swing.JTextField txtciuempleado;
+    private javax.swing.JTextField txtdirempleado;
+    private javax.swing.JTextField txtespempleado;
+    private javax.swing.JTextField txtfecempleado;
+    private javax.swing.JTextField txtingempleado7;
+    private javax.swing.JTextField txtmailempleado;
+    private javax.swing.JTextField txtnomempleado;
+    private javax.swing.JTextField txtsulempleado;
+    private javax.swing.JTextField txttelempleado;
     // End of variables declaration//GEN-END:variables
 
 }
