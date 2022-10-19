@@ -33,6 +33,7 @@ public class Sistema extends javax.swing.JFrame {
         Background = new javax.swing.JPanel();
         TabbedPaneMain = new javax.swing.JTabbedPane();
         PanelCarros = new javax.swing.JPanel();
+        jButton2 = new javax.swing.JButton();
         lblregistrarcoches = new javax.swing.JLabel();
         lblcoche = new javax.swing.JLabel();
         txtplavehiculo = new javax.swing.JTextField();
@@ -80,6 +81,7 @@ public class Sistema extends javax.swing.JFrame {
         btnregistrarempleado = new javax.swing.JLabel();
         PanelClientes = new javax.swing.JPanel();
         jLabel4 = new javax.swing.JLabel();
+        jButton2 = new javax.swing.JButton();
         PanelPlanilla = new javax.swing.JPanel();
         jLabel5 = new javax.swing.JLabel();
         PanelProducto = new javax.swing.JPanel();
@@ -114,6 +116,9 @@ public class Sistema extends javax.swing.JFrame {
         PanelCarros.setBackground(new java.awt.Color(255, 255, 255));
         PanelCarros.setForeground(new java.awt.Color(255, 0, 0));
         PanelCarros.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jButton2.setText("jButton2");
+        PanelCarros.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 270, -1, -1));
 
         lblregistrarcoches.setFont(new java.awt.Font("Roboto Black", 0, 36)); // NOI18N
         lblregistrarcoches.setForeground(new java.awt.Color(102, 102, 102));
@@ -380,6 +385,14 @@ public class Sistema extends javax.swing.JFrame {
         jLabel4.setForeground(new java.awt.Color(102, 102, 102));
         jLabel4.setText("CLIENTES");
         PanelClientes.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 290, 230, 80));
+
+        jButton2.setText("eee");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
+        PanelClientes.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 240, -1, -1));
 
         TabbedPaneMain.addTab("tab3", PanelClientes);
 
@@ -753,6 +766,10 @@ public class Sistema extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_btnregistrarempleadoMouseClicked
 
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton2ActionPerformed
+
     
     
     
@@ -820,6 +837,7 @@ public class Sistema extends javax.swing.JFrame {
     private javax.swing.JLabel fondopiratacoche;
     private javax.swing.JLabel iconproducto;
     private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel17;
