@@ -48,6 +48,7 @@ public class Sistema extends javax.swing.JFrame {
         lblcoche6 = new javax.swing.JLabel();
         txtcedcliente = new javax.swing.JTextField();
         lblcoche5 = new javax.swing.JLabel();
+        jPasswordField1 = new javax.swing.JPasswordField();
         jScrollPane1 = new javax.swing.JScrollPane();
         txtobsvehiculo = new javax.swing.JTextArea();
         jButton1 = new javax.swing.JButton();
@@ -80,7 +81,7 @@ public class Sistema extends javax.swing.JFrame {
         btnregistrarempleado = new javax.swing.JLabel();
         PanelClientes = new javax.swing.JPanel();
         jLabel4 = new javax.swing.JLabel();
-        jButton2 = new javax.swing.JButton();
+        jButton3 = new javax.swing.JButton();
         PanelPlanilla = new javax.swing.JPanel();
         jLabel5 = new javax.swing.JLabel();
         PanelProducto = new javax.swing.JPanel();
@@ -116,6 +117,7 @@ public class Sistema extends javax.swing.JFrame {
         PanelCarros.setForeground(new java.awt.Color(255, 0, 0));
         PanelCarros.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        jButton2.setBackground(new java.awt.Color(204, 0, 0));
         jButton2.setText("jButton2");
         PanelCarros.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 270, -1, -1));
 
@@ -191,6 +193,9 @@ public class Sistema extends javax.swing.JFrame {
         lblcoche5.setFont(new java.awt.Font("Roboto", 0, 18)); // NOI18N
         lblcoche5.setText("Observaciónes:");
         PanelCarros.add(lblcoche5, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 480, -1, -1));
+
+        jPasswordField1.setText("jPasswordField1");
+        PanelCarros.add(jPasswordField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 60, -1, -1));
 
         txtobsvehiculo.setColumns(20);
         txtobsvehiculo.setForeground(new java.awt.Color(51, 51, 51));
@@ -382,13 +387,13 @@ public class Sistema extends javax.swing.JFrame {
         jLabel4.setText("CLIENTES");
         PanelClientes.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 290, 230, 80));
 
-        jButton2.setText("eee");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
+        jButton3.setText("eee");
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton2ActionPerformed(evt);
             }
         });
-        PanelClientes.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 240, -1, -1));
+        PanelClientes.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 240, -1, -1));
 
         TabbedPaneMain.addTab("tab3", PanelClientes);
 
@@ -834,6 +839,7 @@ public class Sistema extends javax.swing.JFrame {
     private javax.swing.JLabel iconproducto;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
+    private javax.swing.JButton jButton3;
     private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel17;
@@ -845,6 +851,7 @@ public class Sistema extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JPasswordField jPasswordField1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JLabel lbapeempleado;
     private javax.swing.JLabel lbcedempleado;
