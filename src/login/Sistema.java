@@ -5,7 +5,7 @@
 
 package login;
 
-import VariablesCedula.variables;
+
 import sql.crudsql;
 
 /**
@@ -20,6 +20,7 @@ public class Sistema extends javax.swing.JFrame {
         
         this.setLocationRelativeTo(null);
         this.setTitle("Sistema");
+        
     }
 
     /** This method is called from within the constructor to
@@ -644,7 +645,7 @@ public class Sistema extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     crudsql objcrud=new crudsql();
-    variables var = new variables();
+
     private void IconCarroMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_IconCarroMouseClicked
       TabbedPaneMain.setSelectedIndex(0);
     }//GEN-LAST:event_IconCarroMouseClicked
@@ -714,10 +715,6 @@ public class Sistema extends javax.swing.JFrame {
         objcrud.insertarVehiculos(txtplavehiculo.getText(), txttipvehiculo.getText(), txtmodvehiculo.getText(), txtcolvehiculo.getText(), txtcedcliente.getText(),
                 txtobsvehiculo.getText(), txtcedcliente.getText());
         
-        
-        
-        objcrud.mostrarCedulasClientes();
-        cmboxCedulas.addItem(var.getCedCliente());
     }//GEN-LAST:event_jButton1MouseClicked
 
     private void txtsulempleadoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtsulempleadoActionPerformed

@@ -1,15 +1,14 @@
 package sql;
 
-import VariablesCedula.variables;
+
 import java.sql.Connection;
 import javax.swing.JOptionPane;
-import java.sql.ResultSet;
+
 
 public class crudsql {
     conexionsql con=new conexionsql();
     java.sql.Statement st;
-    ResultSet rs;
-    variables var = new variables();
+    
     
     public void insertarVehiculos(String plavehiculo, String tipvehiculo, String modvehiculo, String colvehiculo, String marvehiculo, String obsvehiculo, String cedcliente  ){
         try {
@@ -37,26 +36,5 @@ public class crudsql {
         } catch (Exception e) {
              JOptionPane.showMessageDialog(null,"nahh"+e,"Mensaje",JOptionPane.ERROR_MESSAGE);
         }
-    }
-    
-    public void mostrarCedulasClientes(){
-        try {
-            Connection conexion=con.conectar();
-            st=conexion.createStatement();
-            String sql="select cedcliente from vehiculos";
-            rs=st.executeQuery(sql);
-            if(rs.next()){
-            variables.setCedCliente(rs.getString("cedcliente"));
-            } else{
-                variables.setCedCliente("");
-            }
-            st.close();
-            conexion.close();
-            
-        } catch (Exception e) {
-            
-        }
-    }
-    
-    
+    } 
 }
